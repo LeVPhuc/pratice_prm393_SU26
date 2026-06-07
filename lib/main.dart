@@ -46,26 +46,99 @@
 //   }
 // }
 
+// import 'package:flutter/material.dart';
+// import 'lab8/screens/post_list_screen.dart'; // Import đúng đường dẫn bài Lab 8
+//
+// void main() {
+//   runApp(const ApiPoweredApp());
+// }
+//
+// class ApiPoweredApp extends StatelessWidget {
+//   const ApiPoweredApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'API Powered List App',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         useMaterial3: true,
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//       ),
+//       home: const PostListScreen(), // Đặt màn hình danh sách API làm trang chủ
+//     );
+//   }
+// }
+//
+// import 'package:flutter/material.dart';
+// import 'lab8b/screens/weather_screen.dart'; // Import đúng bài Lab 8B
+//
+// void main() {
+//   runApp(const WeatherCompanionApp());
+// }
+//
+// class WeatherCompanionApp extends StatelessWidget {
+//   const WeatherCompanionApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Weather Companion',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         useMaterial3: true,
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+//       ),
+//       home: const WeatherScreen(), // Gọi màn hình thời tiết thông minh
+//     );
+//   }
+// }
+
+
+// import 'package:flutter/material.dart';
+// import 'lab9/screens/book_crud_screen.dart'; // Import đúng đường dẫn bài Lab 9
+//
+// void main() {
+//   runApp(const LocalStorageApp());
+// }
+//
+// class LocalStorageApp extends StatelessWidget {
+//   const LocalStorageApp({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Local JSON Storage CRUD',
+//       debugShowCheckedModeBanner: false,
+//       theme: ThemeData(
+//         useMaterial3: true,
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//       ),
+//       home: const BookCrudScreen(), // Khởi động trang quản lý cơ sở dữ liệu sách JSON
+//     );
+//   }
+// }
+
 import 'package:flutter/material.dart';
-import 'lab8/screens/post_list_screen.dart'; // Import đúng đường dẫn bài Lab 8
+import 'lab10/screens/splash_screen.dart'; // Import đúng bài Lab 10
 
 void main() {
-  runApp(const ApiPoweredApp());
+  runApp(const AuthenticationApp());
 }
 
-class ApiPoweredApp extends StatelessWidget {
-  const ApiPoweredApp({super.key});
+class AuthenticationApp extends StatelessWidget {
+  const AuthenticationApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'API Powered List App',
+      title: 'Lab 10 Authentication App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const PostListScreen(), // Đặt màn hình danh sách API làm trang chủ
+      home: const SplashScreen(), // Màn hình Splash chạy đầu tiên để kiểm tra Auto-login
     );
   }
 }
